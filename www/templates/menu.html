@@ -1,23 +1,60 @@
 <ion-side-menus enable-menu-with-back-views="false">
+  
   <ion-side-menu-content>
-    <ion-nav-bar class="bar-stable">
-      <ion-nav-back-button>
-      </ion-nav-back-button>
+    <ion-nav-bar class="bar-clear">
+      <ion-nav-back-button></ion-nav-back-button>
 
       <ion-nav-buttons side="left">
-        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
-        </button>
+        <button class="button button-icon button-clear ion-navicon-round" menu-toggle="left"></button>
       </ion-nav-buttons>
     </ion-nav-bar>
+    
     <ion-nav-view name="menuContent"></ion-nav-view>
   </ion-side-menu-content>
 
   <ion-side-menu side="left">
-    <ion-header-bar class="bar-stable">
-      <h1 class="title">Left</h1>
-    </ion-header-bar>
-    <ion-content>
-      <ion-list>
+    
+    <ion-content scroll="true">
+
+      <section class="wrapper">
+        
+        <div class="menu-principal">
+          <div class="list">
+            <a menu-close class="item item-icon-left icon-resort" href="#/app/resort">
+              <i class="icon"></i>
+              O Resort
+            </a>
+
+            <a menu-close class="item item-icon-left icon-atividades" href="#/app/atividades">
+              <i class="icon"></i>
+              Atividades
+            </a>
+            
+            <a menu-close class="item item-icon-left icon-personagens" href="#/app/personagens">
+              <i class="icon"></i>
+              Personagens
+            </a>
+
+            <a menu-close class="item item-icon-left icon-bares" href="#/app/bares">
+              <i class="icon"></i>
+              Bares e Restaurantes
+            </a>
+
+            <a menu-close class="item item-icon-left icon-novidades" href="#/app/novidades">
+              <i class="icon"></i>
+              Novidades
+            </a>
+
+            <a menu-close class="item item-icon-left icon-contato" href="#/app/contato">
+              <i class="icon"></i>
+              Contato
+            </a>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- <ion-list>
         <ion-item menu-close ng-click="login()">
           Login
         </ion-item>
@@ -30,7 +67,8 @@
         <ion-item menu-close href="#/app/playlists">
           Playlists
         </ion-item>
-      </ion-list>
+      </ion-list> -->
     </ion-content>
+
   </ion-side-menu>
 </ion-side-menus>

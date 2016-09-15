@@ -15,6 +15,7 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
+// Custom colors
 $orangewhale:                     #d15837 !default;
 
 
@@ -36,17 +37,62 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	font-family: 'Roboto', sans-serif;	
 }
 .wrapper-bg {
+	background: $orangewhale url(../img/background.jpg) center center no-repeat;
+	justify-content: center;
+	background-size: cover;
+}
+.row-logo {
+	flex: 1;
+}
+.row-logo .col {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.row-logo .logo {
+	text-align: center;
+}
+.row-logo .logo > img {
+	width: 65%;
+}
+
+
+// Custom buttons
+.button-max {
+	font-size: 1em;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+
+// Sidemenu
+.menu-principal {
+	display: flex;
+	min-height: 100vh;
 	align-items: center;
 	justify-content: center;
-	background-color: $orangewhale;
+}
+.item,
+a.item {
+	color: rgba(0,0,0,.5);
+	border-color: transparent;
+}
+a.item {
+	font-weight: 300;
+	font-size: 1.15rem;
+	line-height: 2.15rem;
+	background-size: 2em;
 }
 
-.logo {
-	max-width: 50%;
-	
-}
+// Icons
+.icon-resort 	 {	background: url(../img/icons/ico-resort.svg) 0 45% no-repeat; }
+.icon-atividades {	background: url(../img/icons/ico-atividade.svg) 0 45% no-repeat; }
+.icon-personagens {	background: url(../img/icons/ico-personagens.svg) 0 45% no-repeat; }
+.icon-bares {	background: url(../img/icons/ico-bares.svg) 0 45% no-repeat; }
+.icon-novidades {	background: url(../img/icons/ico-novidades.svg) 0 45% no-repeat; }
+.icon-contato {	background: url(../img/icons/ico-contato.svg) 0 45% no-repeat; }
 
-// .wrapper > .row {
-// 	flex: 1;
-// 	margin: 0;
-// }
+
+
+

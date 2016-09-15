@@ -9823,9 +9823,61 @@ a.button {
   font-family: 'Roboto', sans-serif; }
 
 .wrapper-bg {
-  align-items: center;
+  background: #d15837 url(../img/background.jpg) center center no-repeat;
   justify-content: center;
-  background-color: #d15837; }
+  background-size: cover; }
 
-.logo {
-  max-width: 50%; }
+.row-logo {
+  flex: 1; }
+
+.row-logo .col {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+
+.row-logo .logo {
+  text-align: center; }
+
+.row-logo .logo > img {
+  width: 65%; }
+
+.button-max {
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase; }
+
+.menu-principal {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center; }
+
+.item,
+a.item {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: transparent; }
+
+a.item {
+  font-weight: 300;
+  font-size: 1.15rem;
+  line-height: 2.15rem;
+  background-size: 2em; }
+
+.icon-resort {
+  background: url(../img/icons/ico-resort.svg) 0 45% no-repeat; }
+
+.icon-atividades {
+  background: url(../img/icons/ico-atividade.svg) 0 45% no-repeat; }
+
+.icon-personagens {
+  background: url(../img/icons/ico-personagens.svg) 0 45% no-repeat; }
+
+.icon-bares {
+  background: url(../img/icons/ico-bares.svg) 0 45% no-repeat; }
+
+.icon-novidades {
+  background: url(../img/icons/ico-novidades.svg) 0 45% no-repeat; }
+
+.icon-contato {
+  background: url(../img/icons/ico-contato.svg) 0 45% no-repeat; }
